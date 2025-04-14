@@ -1,0 +1,356 @@
+/*what chat gave me*/
+/* Form Styling */
+form.myform {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Style all fieldsets */
+fieldset {
+    border: 2px solid #9ee6dd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Style legends to match the light blue color */
+legend {
+    color: #9ee6dd;
+    font-weight: 600;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+}
+
+/*end of what chat gave me*/
+/* Prevent problems with different browsers */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header section styling */
+header {
+    background-color: #7566a5;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: center; /* centers items vertically */
+}
+
+
+header .site-text {
+    padding-left: 2vw;
+}
+
+header span {
+    margin: 0;
+    color: white;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+header h1 {
+    color: white;
+}
+
+
+/* Small screen format */
+@media only screen and (max-width: 700px) {
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 2vw;
+    }
+
+    nav a {
+        text-decoration: none;
+        display: block;
+        padding: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: 1px solid #aaa;
+        color: #f2778d;
+    }
+
+    nav .active a {
+        background-color: #f2778d;
+        color: white;
+    }
+}
+
+/* Large screen format */
+@media only screen and (min-width: 701px) {
+    nav {
+        border-top: solid 1px #E0E6E6;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        padding: 1.2rem 1rem 0.3rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #f29979;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 2px #fff;
+    }
+
+    nav .active a {
+        border-bottom: solid 2px #f29979;
+    }
+
+    nav a:hover {
+        color: #9ee6dd;
+    }
+}
+
+/* Main section styling */
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #ff1493;
+}
+
+main h2 {
+    color: #ff1493;
+    margin-bottom: 0.2rem;
+}
+
+main h3 {
+    color: #ff1493;
+}
+
+main p {
+    color: #333333;
+    margin: 0;
+}
+
+main ol {
+    padding: 0.5rem 30px;
+    background-color: #d6cfee;
+}
+
+main dl dt {
+    color: #f29979;
+    font-weight: 700;
+}
+
+main dl dd {
+    color: #024873;
+    font-size: 0.9rem;
+    margin-left: 20px;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #7ff4ef;
+    width: 12.5rem;
+    padding: 0.5rem;
+    border: 2px solid #9ee6dd;
+    border-radius: 0.5rem;
+}
+
+main a {
+    color: #024873;
+}
+
+main a:hover {
+    color: rgb(239, 0, 24);
+}
+form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+textarea, input, select {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+figure.hero {
+    width: 100%;
+    margin: 0;
+}
+
+figure.hero img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* Figure styling */
+figure.home {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.home img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+figure.home figcaption {
+    text-align: center;
+    max-width: 100%;
+}
+
+/* Gallery styling */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: 0.5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    font-size: 0.8rem;
+    color: #b64e11;
+    text-align: center;
+}
+
+/* Footer section styling */
+footer {
+    background-color: #7566a5;
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    clear: both;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+    margin-left: 0.25rem;
+}
+
+/* Recipe image hover effect */
+.gallery img {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.gallery img:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* Rewards Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(117, 102, 165, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #9ee6dd;
+    color: #7566a5;
+    text-align: left;
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f6ff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #e2f7f5;
+}
+
+th {
+    font-weight: 700;
+    border-bottom: 2px solid #d6cfee;
+}
+
+td {
+    border-bottom: 1px solid #eee;
+}
+
+.socials {
+    margin: 40px 0;
+}
+
+.socials h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-icons a img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.15);
+}
+
+.video-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    margin-top: 2rem;
+}
+
+.video-row iframe {
+    flex: 1;
+    aspect-ratio: 9 / 16; /* Keeps vertical phone-style video format */
+    width: 100%;
+    border: none;
+}
